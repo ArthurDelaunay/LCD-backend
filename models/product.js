@@ -1,7 +1,7 @@
 const { DataTypes } = require("sequelize")
 
 module.exports = (sequelize) => {
-  const Produit = sequelize.define("produit", {
+  const Product = sequelize.define("product", {
     name: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -11,5 +11,5 @@ module.exports = (sequelize) => {
       allowNull: false,
     },
   })
-  return Produit
+  return Product
 }
